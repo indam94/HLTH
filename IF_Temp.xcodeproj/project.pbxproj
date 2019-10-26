@@ -22,6 +22,7 @@
 		223FF6572364F5F90073A926 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6562364F5F90073A926 /* MainViewController.swift */; };
 		223FF65B2365031C0073A926 /* PostNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65A2365031C0073A926 /* PostNetwork.swift */; };
 		223FF65D2365038C0073A926 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65C2365038C0073A926 /* Constants.swift */; };
+		223FF66023650E910073A926 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65F23650E910073A926 /* ProfileViewController.swift */; };
 		B13B29794F0AF09DCAA71B58 /* Pods_IF_Temp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A81EB9E8131A75150372A6 /* Pods_IF_Temp.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		223FF6562364F5F90073A926 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		223FF65A2365031C0073A926 /* PostNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetwork.swift; sourceTree = "<group>"; };
 		223FF65C2365038C0073A926 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		223FF65F23650E910073A926 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8B51739CD350984417381083 /* Pods-IF_Temp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IF_Temp.release.xcconfig"; path = "Target Support Files/Pods-IF_Temp/Pods-IF_Temp.release.xcconfig"; sourceTree = "<group>"; };
 		EE264D01B57023452A1E7DBD /* Pods-IF_Temp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IF_Temp.debug.xcconfig"; path = "Target Support Files/Pods-IF_Temp/Pods-IF_Temp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				223FF62F2364BE510073A926 /* ViewController.swift */,
 				223FF6542364F5EE0073A926 /* LoginViewController.swift */,
 				223FF6562364F5F90073A926 /* MainViewController.swift */,
+				223FF65F23650E910073A926 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				223FF6302364BE510073A926 /* ViewController.swift in Sources */,
 				223FF64F2364C34D0073A926 /* WorkoutSession.swift in Sources */,
 				223FF6512364C7F10073A926 /* HealthKitSetupAssistant.swift in Sources */,
+				223FF66023650E910073A926 /* ProfileViewController.swift in Sources */,
 				223FF6552364F5EE0073A926 /* LoginViewController.swift in Sources */,
 				223FF6532364D4870073A926 /* UserPersonalProfile.swift in Sources */,
 				223FF6572364F5F90073A926 /* MainViewController.swift in Sources */,

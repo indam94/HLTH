@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="85"/>
+            <point key="canvasLocation" x="413" y="69"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="n32-B3-YIL">
@@ -127,6 +127,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vP-yA-KDW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1356" y="-339"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="4gX-jF-N5D">
+            <objects>
+                <viewController id="VSM-Bv-a7x" customClass="ProfileViewController" customModule="IF_Temp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hbC-pD-8TN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aSW-Vz-2pk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hp-RK-IZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="-343"/>
         </scene>
     </scenes>
 </document>
