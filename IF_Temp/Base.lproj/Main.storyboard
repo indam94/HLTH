@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,104 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IF_Temp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="85"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="n32-B3-YIL">
+            <objects>
+                <viewController storyboardIdentifier="mainViewController" id="zet-Mr-uN4" customClass="MainViewController" customModule="IF_Temp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yJG-so-nyv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MainScreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQW-ZV-YA4">
+                                <rect key="frame" x="162" y="358" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xBs-97-KPq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QOY-i1-DEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="432"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="a0O-1F-DEO">
+            <objects>
+                <viewController storyboardIdentifier="loginViewController" id="d3b-N6-DKc" customClass="LoginViewController" customModule="IF_Temp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x2d-kv-2pC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zty-ju-3wu">
+                                <rect key="frame" x="30" y="308.66666666666669" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zh4-As-err">
+                                <rect key="frame" x="30" y="359.66666666666669" width="354" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BF-lx-KEb">
+                                <rect key="frame" x="30" y="406.66666666666669" width="354" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsZ-iL-wzL">
+                                <rect key="frame" x="334" y="436.66666666666669" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="McO-Ln-avg"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="d3b-N6-DKc" eventType="touchUpInside" id="RWW-Jy-oi3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zh4-As-err" firstAttribute="top" secondItem="zty-ju-3wu" secondAttribute="bottom" constant="30" id="0gg-FE-P84"/>
+                            <constraint firstItem="SjO-Oe-bon" firstAttribute="trailing" secondItem="Zh4-As-err" secondAttribute="trailing" constant="30" id="2Ec-bx-d1i"/>
+                            <constraint firstItem="Zh4-As-err" firstAttribute="centerY" secondItem="x2d-kv-2pC" secondAttribute="centerY" id="9FF-c0-1Iz"/>
+                            <constraint firstItem="zty-ju-3wu" firstAttribute="leading" secondItem="SjO-Oe-bon" secondAttribute="leading" constant="30" id="Cpm-00-4Br"/>
+                            <constraint firstItem="SjO-Oe-bon" firstAttribute="trailing" secondItem="nsZ-iL-wzL" secondAttribute="trailing" constant="30" id="Kdz-en-oZ6"/>
+                            <constraint firstItem="Zh4-As-err" firstAttribute="leading" secondItem="SjO-Oe-bon" secondAttribute="leading" constant="30" id="Row-Lr-K2S"/>
+                            <constraint firstItem="1BF-lx-KEb" firstAttribute="leading" secondItem="SjO-Oe-bon" secondAttribute="leading" constant="30" id="d4F-oB-Ogf"/>
+                            <constraint firstItem="nsZ-iL-wzL" firstAttribute="top" secondItem="1BF-lx-KEb" secondAttribute="bottom" constant="30" id="fba-8O-MeN"/>
+                            <constraint firstItem="SjO-Oe-bon" firstAttribute="trailing" secondItem="1BF-lx-KEb" secondAttribute="trailing" constant="30" id="fhp-ij-C3q"/>
+                            <constraint firstItem="nsZ-iL-wzL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SjO-Oe-bon" secondAttribute="leading" symbolic="YES" id="j5o-nl-0iF"/>
+                            <constraint firstItem="1BF-lx-KEb" firstAttribute="top" secondItem="Zh4-As-err" secondAttribute="bottom" constant="30" id="qZ0-P2-Kcp"/>
+                            <constraint firstItem="SjO-Oe-bon" firstAttribute="trailing" secondItem="zty-ju-3wu" secondAttribute="trailing" constant="30" id="ySG-8r-nqO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SjO-Oe-bon"/>
+                    </view>
+                    <connections>
+                        <outlet property="submitButton" destination="nsZ-iL-wzL" id="tg4-4g-YrC"/>
+                        <outlet property="submitStatusLabel" destination="1BF-lx-KEb" id="Hhx-xb-Ges"/>
+                        <outlet property="usernameTextField" destination="Zh4-As-err" id="ViL-k4-pl6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vP-yA-KDW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="-339"/>
         </scene>
     </scenes>
 </document>

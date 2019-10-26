@@ -16,6 +16,10 @@
 		223FF64D2364C34D0073A926 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF64A2364C34D0073A926 /* UserHealthProfile.swift */; };
 		223FF64E2364C34D0073A926 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF64B2364C34D0073A926 /* Workout.swift */; };
 		223FF64F2364C34D0073A926 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF64C2364C34D0073A926 /* WorkoutSession.swift */; };
+		223FF6512364C7F10073A926 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6502364C7F10073A926 /* HealthKitSetupAssistant.swift */; };
+		223FF6532364D4870073A926 /* UserPersonalProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6522364D4870073A926 /* UserPersonalProfile.swift */; };
+		223FF6552364F5EE0073A926 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6542364F5EE0073A926 /* LoginViewController.swift */; };
+		223FF6572364F5F90073A926 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6562364F5F90073A926 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		223FF64A2364C34D0073A926 /* UserHealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
 		223FF64B2364C34D0073A926 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		223FF64C2364C34D0073A926 /* WorkoutSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
+		223FF6502364C7F10073A926 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		223FF6522364D4870073A926 /* UserPersonalProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersonalProfile.swift; sourceTree = "<group>"; };
+		223FF6542364F5EE0073A926 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		223FF6562364F5F90073A926 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +78,11 @@
 				223FF6472364C2FE0073A926 /* ViewControllers */,
 				223FF63F2364BEE70073A926 /* IF_Temp.entitlements */,
 				223FF62B2364BE510073A926 /* AppDelegate.swift */,
-				223FF62F2364BE510073A926 /* ViewController.swift */,
 				223FF6312364BE510073A926 /* Main.storyboard */,
 				223FF6342364BE540073A926 /* Assets.xcassets */,
 				223FF6362364BE540073A926 /* LaunchScreen.storyboard */,
 				223FF6392364BE540073A926 /* Info.plist */,
+				223FF6502364C7F10073A926 /* HealthKitSetupAssistant.swift */,
 			);
 			path = IF_Temp;
 			sourceTree = "<group>";
@@ -90,6 +98,9 @@
 		223FF6472364C2FE0073A926 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				223FF62F2364BE510073A926 /* ViewController.swift */,
+				223FF6542364F5EE0073A926 /* LoginViewController.swift */,
+				223FF6562364F5F90073A926 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -100,6 +111,7 @@
 				223FF64A2364C34D0073A926 /* UserHealthProfile.swift */,
 				223FF64B2364C34D0073A926 /* Workout.swift */,
 				223FF64C2364C34D0073A926 /* WorkoutSession.swift */,
+				223FF6522364D4870073A926 /* UserPersonalProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +197,10 @@
 				223FF64D2364C34D0073A926 /* UserHealthProfile.swift in Sources */,
 				223FF6302364BE510073A926 /* ViewController.swift in Sources */,
 				223FF64F2364C34D0073A926 /* WorkoutSession.swift in Sources */,
+				223FF6512364C7F10073A926 /* HealthKitSetupAssistant.swift in Sources */,
+				223FF6552364F5EE0073A926 /* LoginViewController.swift in Sources */,
+				223FF6532364D4870073A926 /* UserPersonalProfile.swift in Sources */,
+				223FF6572364F5F90073A926 /* MainViewController.swift in Sources */,
 				223FF62C2364BE510073A926 /* AppDelegate.swift in Sources */,
 				223FF64E2364C34D0073A926 /* Workout.swift in Sources */,
 			);
