@@ -31,17 +31,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MainScreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQW-ZV-YA4">
-                                <rect key="frame" x="162" y="358" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ecx-M1-erK" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="50" y="50" width="314" height="314"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ecx-M1-erK" secondAttribute="height" id="YeT-0C-HT6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainScreen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQW-ZV-YA4">
+                                <rect key="frame" x="30" y="394" width="354" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ecx-M1-erK" firstAttribute="top" secondItem="xBs-97-KPq" secondAttribute="top" constant="50" id="5qz-6d-7Cj"/>
+                            <constraint firstItem="Ecx-M1-erK" firstAttribute="leading" secondItem="xBs-97-KPq" secondAttribute="leading" constant="50" id="S16-rG-78J"/>
+                            <constraint firstItem="xBs-97-KPq" firstAttribute="trailing" secondItem="PQW-ZV-YA4" secondAttribute="trailing" constant="30" id="awM-GQ-2oI"/>
+                            <constraint firstItem="PQW-ZV-YA4" firstAttribute="leading" secondItem="xBs-97-KPq" secondAttribute="leading" constant="30" id="foG-2m-fCI"/>
+                            <constraint firstItem="PQW-ZV-YA4" firstAttribute="top" secondItem="Ecx-M1-erK" secondAttribute="bottom" constant="30" id="hd3-EB-9Ur"/>
+                            <constraint firstItem="xBs-97-KPq" firstAttribute="trailing" secondItem="Ecx-M1-erK" secondAttribute="trailing" constant="50" id="mL7-9r-ZB8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xBs-97-KPq"/>
                     </view>
+                    <connections>
+                        <outlet property="helloUser" destination="PQW-ZV-YA4" id="OwS-rg-s4J"/>
+                        <outlet property="pieChart" destination="Ecx-M1-erK" id="pCX-xJ-txk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOY-i1-DEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

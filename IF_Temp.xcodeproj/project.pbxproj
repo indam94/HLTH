@@ -83,6 +83,7 @@
 		223FF62A2364BE510073A926 /* IF_Temp */ = {
 			isa = PBXGroup;
 			children = (
+				223FF65E2365077B0073A926 /* View */,
 				223FF658236502E80073A926 /* Controller */,
 				223FF6492364C3150073A926 /* HealthKitExtensions */,
 				223FF6482364C30A0073A926 /* Models */,
@@ -152,13 +153,19 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		223FF65E2365077B0073A926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2EF1A94FDEC773C25D60D68E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				EE264D01B57023452A1E7DBD /* Pods-IF_Temp.debug.xcconfig */,
 				8B51739CD350984417381083 /* Pods-IF_Temp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
