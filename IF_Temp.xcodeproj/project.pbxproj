@@ -8,22 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		223FF62C2364BE510073A926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF62B2364BE510073A926 /* AppDelegate.swift */; };
-		223FF62E2364BE510073A926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF62D2364BE510073A926 /* SceneDelegate.swift */; };
 		223FF6302364BE510073A926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF62F2364BE510073A926 /* ViewController.swift */; };
 		223FF6332364BE510073A926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FF6312364BE510073A926 /* Main.storyboard */; };
 		223FF6352364BE540073A926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223FF6342364BE540073A926 /* Assets.xcassets */; };
 		223FF6382364BE540073A926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FF6362364BE540073A926 /* LaunchScreen.storyboard */; };
+		223FF6422364BEE70073A926 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223FF6412364BEE70073A926 /* HealthKit.framework */; };
+		223FF64D2364C34D0073A926 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF64A2364C34D0073A926 /* UserHealthProfile.swift */; };
+		223FF64E2364C34D0073A926 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF64B2364C34D0073A926 /* Workout.swift */; };
+		223FF64F2364C34D0073A926 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF64C2364C34D0073A926 /* WorkoutSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		223FF6282364BE510073A926 /* IF_Temp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IF_Temp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223FF62B2364BE510073A926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		223FF62D2364BE510073A926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		223FF62F2364BE510073A926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		223FF6322364BE510073A926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		223FF6342364BE540073A926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		223FF6372364BE540073A926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		223FF6392364BE540073A926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223FF63F2364BEE70073A926 /* IF_Temp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IF_Temp.entitlements; sourceTree = "<group>"; };
+		223FF6412364BEE70073A926 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		223FF64A2364C34D0073A926 /* UserHealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
+		223FF64B2364C34D0073A926 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		223FF64C2364C34D0073A926 /* WorkoutSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223FF6422364BEE70073A926 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,7 @@
 			children = (
 				223FF62A2364BE510073A926 /* IF_Temp */,
 				223FF6292364BE510073A926 /* Products */,
+				223FF6402364BEE70073A926 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +65,11 @@
 		223FF62A2364BE510073A926 /* IF_Temp */ = {
 			isa = PBXGroup;
 			children = (
+				223FF6492364C3150073A926 /* HealthKitExtensions */,
+				223FF6482364C30A0073A926 /* Models */,
+				223FF6472364C2FE0073A926 /* ViewControllers */,
+				223FF63F2364BEE70073A926 /* IF_Temp.entitlements */,
 				223FF62B2364BE510073A926 /* AppDelegate.swift */,
-				223FF62D2364BE510073A926 /* SceneDelegate.swift */,
 				223FF62F2364BE510073A926 /* ViewController.swift */,
 				223FF6312364BE510073A926 /* Main.storyboard */,
 				223FF6342364BE540073A926 /* Assets.xcassets */,
@@ -65,6 +77,38 @@
 				223FF6392364BE540073A926 /* Info.plist */,
 			);
 			path = IF_Temp;
+			sourceTree = "<group>";
+		};
+		223FF6402364BEE70073A926 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				223FF6412364BEE70073A926 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		223FF6472364C2FE0073A926 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		223FF6482364C30A0073A926 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				223FF64A2364C34D0073A926 /* UserHealthProfile.swift */,
+				223FF64B2364C34D0073A926 /* Workout.swift */,
+				223FF64C2364C34D0073A926 /* WorkoutSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		223FF6492364C3150073A926 /* HealthKitExtensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HealthKitExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223FF64D2364C34D0073A926 /* UserHealthProfile.swift in Sources */,
 				223FF6302364BE510073A926 /* ViewController.swift in Sources */,
+				223FF64F2364C34D0073A926 /* WorkoutSession.swift in Sources */,
 				223FF62C2364BE510073A926 /* AppDelegate.swift in Sources */,
-				223FF62E2364BE510073A926 /* SceneDelegate.swift in Sources */,
+				223FF64E2364C34D0073A926 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +330,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IF_Temp/IF_Temp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DE97A6B9N7;
 				INFOPLIST_FILE = IF_Temp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "LDG.IF-Temp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,9 +350,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IF_Temp/IF_Temp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DE97A6B9N7;
 				INFOPLIST_FILE = IF_Temp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "LDG.IF-Temp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
