@@ -8,6 +8,7 @@
 
 import Foundation
 
+//UserName
 let USER_PERSONAL_PROFILE_DATA_NAME = "user_personal_profile_data_name"
 
 class UserPersonalProfile{

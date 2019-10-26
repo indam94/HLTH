@@ -20,6 +20,8 @@
 		223FF6532364D4870073A926 /* UserPersonalProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6522364D4870073A926 /* UserPersonalProfile.swift */; };
 		223FF6552364F5EE0073A926 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6542364F5EE0073A926 /* LoginViewController.swift */; };
 		223FF6572364F5F90073A926 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6562364F5F90073A926 /* MainViewController.swift */; };
+		223FF65B2365031C0073A926 /* PostNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65A2365031C0073A926 /* PostNetwork.swift */; };
+		223FF65D2365038C0073A926 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65C2365038C0073A926 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		223FF6522364D4870073A926 /* UserPersonalProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersonalProfile.swift; sourceTree = "<group>"; };
 		223FF6542364F5EE0073A926 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		223FF6562364F5F90073A926 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		223FF65A2365031C0073A926 /* PostNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetwork.swift; sourceTree = "<group>"; };
+		223FF65C2365038C0073A926 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		223FF62A2364BE510073A926 /* IF_Temp */ = {
 			isa = PBXGroup;
 			children = (
+				223FF658236502E80073A926 /* Controller */,
 				223FF6492364C3150073A926 /* HealthKitExtensions */,
 				223FF6482364C30A0073A926 /* Models */,
 				223FF6472364C2FE0073A926 /* ViewControllers */,
@@ -112,6 +117,7 @@
 				223FF64B2364C34D0073A926 /* Workout.swift */,
 				223FF64C2364C34D0073A926 /* WorkoutSession.swift */,
 				223FF6522364D4870073A926 /* UserPersonalProfile.swift */,
+				223FF65C2365038C0073A926 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +127,22 @@
 			children = (
 			);
 			path = HealthKitExtensions;
+			sourceTree = "<group>";
+		};
+		223FF658236502E80073A926 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				223FF659236502F90073A926 /* Network */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		223FF659236502F90073A926 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				223FF65A2365031C0073A926 /* PostNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223FF65B2365031C0073A926 /* PostNetwork.swift in Sources */,
+				223FF65D2365038C0073A926 /* Constants.swift in Sources */,
 				223FF64D2364C34D0073A926 /* UserHealthProfile.swift in Sources */,
 				223FF6302364BE510073A926 /* ViewController.swift in Sources */,
 				223FF64F2364C34D0073A926 /* WorkoutSession.swift in Sources */,
