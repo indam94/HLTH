@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //AuthorizeHealthKit
         HealthKitSetupAssistant.authorizeHealthKit { (authorized, error) in
           
           guard authorized else {
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
        
+        //if not login
         if((UserPersonalProfile.getUserName()) == nil || UserPersonalProfile.getUserName() == ""){
             
             print("You need Login!")
@@ -48,7 +50,11 @@ class ViewController: UIViewController {
         }
         
         else{
-            //go to first page
+            //go to main
+            let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainViewController") as! MainViewController
+               
+            self.present(mainVC, animated: false, completion: nil)
+
         }
     }
     

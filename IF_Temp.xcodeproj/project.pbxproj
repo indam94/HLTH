@@ -22,9 +22,11 @@
 		223FF6572364F5F90073A926 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6562364F5F90073A926 /* MainViewController.swift */; };
 		223FF65B2365031C0073A926 /* PostNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65A2365031C0073A926 /* PostNetwork.swift */; };
 		223FF65D2365038C0073A926 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65C2365038C0073A926 /* Constants.swift */; };
+		B13B29794F0AF09DCAA71B58 /* Pods_IF_Temp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A81EB9E8131A75150372A6 /* Pods_IF_Temp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03A81EB9E8131A75150372A6 /* Pods_IF_Temp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IF_Temp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223FF6282364BE510073A926 /* IF_Temp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IF_Temp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223FF62B2364BE510073A926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223FF62F2364BE510073A926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		223FF6562364F5F90073A926 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		223FF65A2365031C0073A926 /* PostNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetwork.swift; sourceTree = "<group>"; };
 		223FF65C2365038C0073A926 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8B51739CD350984417381083 /* Pods-IF_Temp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IF_Temp.release.xcconfig"; path = "Target Support Files/Pods-IF_Temp/Pods-IF_Temp.release.xcconfig"; sourceTree = "<group>"; };
+		EE264D01B57023452A1E7DBD /* Pods-IF_Temp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IF_Temp.debug.xcconfig"; path = "Target Support Files/Pods-IF_Temp/Pods-IF_Temp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				223FF6422364BEE70073A926 /* HealthKit.framework in Frameworks */,
+				B13B29794F0AF09DCAA71B58 /* Pods_IF_Temp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,7 @@
 				223FF62A2364BE510073A926 /* IF_Temp */,
 				223FF6292364BE510073A926 /* Products */,
 				223FF6402364BEE70073A926 /* Frameworks */,
+				2EF1A94FDEC773C25D60D68E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				223FF6412364BEE70073A926 /* HealthKit.framework */,
+				03A81EB9E8131A75150372A6 /* Pods_IF_Temp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,6 +152,16 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		2EF1A94FDEC773C25D60D68E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE264D01B57023452A1E7DBD /* Pods-IF_Temp.debug.xcconfig */,
+				8B51739CD350984417381083 /* Pods-IF_Temp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 223FF63C2364BE540073A926 /* Build configuration list for PBXNativeTarget "IF_Temp" */;
 			buildPhases = (
+				71A85ED0BB41FFDF10B6D34B /* [CP] Check Pods Manifest.lock */,
 				223FF6242364BE510073A926 /* Sources */,
 				223FF6252364BE510073A926 /* Frameworks */,
 				223FF6262364BE510073A926 /* Resources */,
+				E045AF4FBACDACBEAB99A6DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,6 +229,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71A85ED0BB41FFDF10B6D34B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IF_Temp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E045AF4FBACDACBEAB99A6DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IF_Temp/Pods-IF_Temp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IF_Temp/Pods-IF_Temp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		223FF6242364BE510073A926 /* Sources */ = {
@@ -368,6 +434,7 @@
 		};
 		223FF63D2364BE540073A926 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE264D01B57023452A1E7DBD /* Pods-IF_Temp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IF_Temp/IF_Temp.entitlements;
@@ -388,6 +455,7 @@
 		};
 		223FF63E2364BE540073A926 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B51739CD350984417381083 /* Pods-IF_Temp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IF_Temp/IF_Temp.entitlements;
