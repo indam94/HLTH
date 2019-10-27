@@ -8,6 +8,24 @@
 
 import UIKit
 
+class DetailCardViewCell: UITableViewCell{
+    @IBOutlet weak var outsideCardView: UIView!
+    
+    @IBOutlet weak var insideCardView: UIView!
+    
+    @IBOutlet weak var riskAmount: UILabel!
+    
+    @IBOutlet weak var riskType: UILabel!
+    
+    @IBOutlet weak var riskLabel: UILabel!
+}
+
+class DetailTableViewCell: UITableViewCell{
+    
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+}
+
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
@@ -38,13 +56,27 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if(indexPath.section == 0){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cardCell", for: indexPath) as! DetailCardViewCell
+                    
+            //        cell.riskType.text =
+            //        cell.riskAmount.text =
+            //        cell.riskLabel.text =
+                    cell.backgroundColor = UIColor(white: 1.0, alpha: 1)
+                    cell.insideCardView.layer.cornerRadius = 10
+                    
+                    return cell
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionCell", for: indexPath) as! DetailTableViewCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cardCell", for: indexPath)
-        
-        cell.contentView.backgroundColor = UIColor(white: 0.95, alpha: 1)
+//        cell.descriptionTextView.text =
         
         return cell
         
+    }
+    @IBAction func onClickInput(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

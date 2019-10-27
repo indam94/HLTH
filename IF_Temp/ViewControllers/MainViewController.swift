@@ -53,5 +53,16 @@ class MainViewController: UIViewController {
         pieChart.data = chartData
         
     }
+    
+    @IBAction func onClickDetailPage(_ sender: Any) {
+        
+        //go to main
+        let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailViewController") as! DetailViewController
+           
+        
+       self.present(detailVC, animated: true)
+        
+    }
+    
 
 }
