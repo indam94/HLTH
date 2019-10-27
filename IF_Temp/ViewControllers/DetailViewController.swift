@@ -41,6 +41,10 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         detailTableView.separatorColor = UIColor(white: 0.95, alpha: 1)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Qc-bH-4qX">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -209,6 +210,27 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="    " id="CAF-yI-sRZ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Ef7-sK-I3Y" style="IBUITableViewCellStyleDefault" id="hli-EW-6sF">
+                                        <rect key="frame" x="0.0" y="626.00000762939453" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hli-EW-6sF" id="ubr-e8-qAy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Get Data From Apple Health" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ef7-sK-I3Y">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="5OY-Ek-icT" id="FlO-Lp-naf"/>
@@ -240,13 +262,13 @@
                                 <rect key="frame" x="36" y="20" width="342" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello! Unknown" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs0-ds-WUZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="192" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="150"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_mark" translatesAutoresizingMaskIntoConstraints="NO" id="2P9-LU-UXM">
-                                        <rect key="frame" x="192" y="0.0" width="150" height="150"/>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_mark" translatesAutoresizingMaskIntoConstraints="NO" id="2P9-LU-UXM">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2P9-LU-UXM" secondAttribute="height" id="23B-sk-Sih"/>
                                         </constraints>
@@ -356,7 +378,7 @@
                                                             </constraints>
                                                         </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" name="Safe"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="jjK-pV-ahC" secondAttribute="bottom" constant="20" id="1R7-dV-ZZr"/>
                                                         <constraint firstAttribute="trailing" secondItem="jjK-pV-ahC" secondAttribute="trailing" constant="20" id="5a6-Xn-fIU"/>
@@ -438,6 +460,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3G-Ut-Anm">
+                                <rect key="frame" x="20" y="255" width="374" height="221"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Gb0-5j-4cX">
                                 <rect key="frame" x="30" y="281" width="354" height="174.33333333333337"/>
                                 <subviews>
@@ -469,6 +495,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s19-2W-0ge">
                                                 <rect key="frame" x="192" y="0.0" width="162" height="30"/>
+                                                <color key="tintColor" name="Safe"/>
                                                 <state key="normal" title="Sign Up"/>
                                                 <connections>
                                                     <action selector="onSignUp:" destination="d3b-N6-DKc" eventType="touchUpInside" id="rZw-OA-6NC"/>
@@ -477,18 +504,24 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Safe"/>
                         <constraints>
                             <constraint firstItem="Gb0-5j-4cX" firstAttribute="leading" secondItem="SjO-Oe-bon" secondAttribute="leading" constant="30" id="9Zl-PF-Xpi"/>
+                            <constraint firstItem="SjO-Oe-bon" firstAttribute="bottom" secondItem="S3G-Ut-Anm" secondAttribute="bottom" constant="260" id="BGl-d7-0lG"/>
+                            <constraint firstItem="S3G-Ut-Anm" firstAttribute="top" secondItem="SjO-Oe-bon" secondAttribute="top" constant="255" id="GVP-9B-0gD"/>
                             <constraint firstItem="Gb0-5j-4cX" firstAttribute="centerY" secondItem="x2d-kv-2pC" secondAttribute="centerY" id="VDj-dk-pqC"/>
+                            <constraint firstItem="SjO-Oe-bon" firstAttribute="trailing" secondItem="S3G-Ut-Anm" secondAttribute="trailing" constant="20" id="cNO-CY-7tg"/>
                             <constraint firstItem="SjO-Oe-bon" firstAttribute="trailing" secondItem="Gb0-5j-4cX" secondAttribute="trailing" constant="30" id="gMi-tU-r6t"/>
+                            <constraint firstItem="S3G-Ut-Anm" firstAttribute="leading" secondItem="SjO-Oe-bon" secondAttribute="leading" constant="20" id="lOb-s8-z4e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SjO-Oe-bon"/>
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="ufw-CB-e4C" id="JGz-VW-goH"/>
+                        <outlet property="signContainer" destination="S3G-Ut-Anm" id="RLP-36-pEc"/>
                         <outlet property="signupButton" destination="s19-2W-0ge" id="xUP-MD-gIE"/>
                         <outlet property="submitButton" destination="nsZ-iL-wzL" id="tg4-4g-YrC"/>
                         <outlet property="usernameTextField" destination="Zh4-As-err" id="ViL-k4-pl6"/>
@@ -730,5 +763,8 @@
     </scenes>
     <resources>
         <image name="question_mark" width="74" height="74"/>
+        <namedColor name="Safe">
+            <color red="0.0" green="0.78000000000000003" blue="0.69999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

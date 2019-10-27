@@ -18,8 +18,12 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var signupButton: UIButton!
     
+    @IBOutlet weak var signContainer: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        signContainer.layer.cornerRadius = 10
         
         usernameTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         passwordTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
@@ -27,7 +31,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         submitButton.isEnabled = false
         signupButton.isEnabled = false
-        
+
         NotificationCenter.default.addObserver(self, selector: #selector(self.setLoginInfoByNotification), name: NOTIFICATION_SET_USER_INFO, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.setLoginInfoFailByNotification), name: NOTIFICATION_SET_USER_INFO_FAIL, object: nil)
         

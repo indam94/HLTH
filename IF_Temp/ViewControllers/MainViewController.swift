@@ -22,6 +22,7 @@ class MainViewController: UIViewController {
             helloUser.text = "Hello!\n\(userName)"
             
         }
+        self.view.layer.backgroundColor = UIColor.green.cgColor
         
         profileImg.layer.cornerRadius = 50
         

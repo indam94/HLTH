@@ -138,8 +138,8 @@
 			children = (
 				223FF6502364C7F10073A926 /* HealthKitSetupAssistant.swift */,
 				223E34C92365AC83000B1845 /* HealthKitGetProfile.swift */,
-				223FF659236502F90073A926 /* Network */,
 				223E34CB2365AFA7000B1845 /* Toast.swift */,
+				223FF659236502F90073A926 /* Network */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

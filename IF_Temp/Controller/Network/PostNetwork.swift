@@ -83,7 +83,7 @@ class PostNetwork{
     }
     
     
-    //MARK: - Log In
+    //MARK: - Request Log In
     class func PostNetWorkRequestLogin(userName: String, password: String){
         
         print("First Network Point")
@@ -149,7 +149,7 @@ class PostNetwork{
         
     }
     
-    //MARK: - Sign Up
+    //MARK: - Request Sign Up
     class func PostNetWorkRequestSignup(userName: String, password: String){
         
         print("First Network Point")
@@ -298,6 +298,9 @@ class PostNetwork{
         }
         
     }
+    
+    //MARK: - Request RiskData
+    
 }
 
 
