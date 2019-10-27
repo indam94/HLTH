@@ -348,23 +348,22 @@
                                                                         <constraint firstAttribute="width" secondItem="I1B-Np-Kwi" secondAttribute="height" multiplier="1:1" id="P2L-uf-kzu"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O3-TK-vdh">
                                                                     <rect key="frame" x="98" y="10" width="216" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bec-0X-wIR">
                                                                     <rect key="frame" x="98" y="56.333333333333321" width="216" height="21.666666666666664"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="1O3-TK-vdh" secondAttribute="trailing" constant="20" id="Lbb-tA-3kI"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Bec-0X-wIR" secondAttribute="bottom" constant="10" id="SNQ-xN-qkD"/>
@@ -378,7 +377,7 @@
                                                             </constraints>
                                                         </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" name="Safe"/>
+                                                    <color key="backgroundColor" name="Risk"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="jjK-pV-ahC" secondAttribute="bottom" constant="20" id="1R7-dV-ZZr"/>
                                                         <constraint firstAttribute="trailing" secondItem="jjK-pV-ahC" secondAttribute="trailing" constant="20" id="5a6-Xn-fIU"/>
@@ -534,6 +533,9 @@
     </scenes>
     <resources>
         <image name="question_mark" width="74" height="74"/>
+        <namedColor name="Risk">
+            <color red="1" green="0.17599999904632568" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Safe">
             <color red="0.0" green="0.78000000000000003" blue="0.69999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

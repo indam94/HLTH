@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailCardViewCell: UITableViewCell{
-    @IBOutlet weak var outsideCardView: UIView!
+    @IBOutlet weak var outsideCardView: DetailCardView!
     
     @IBOutlet weak var insideCardView: UIView!
     
@@ -30,6 +30,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     @IBOutlet weak var detailTableView: UITableView!
+    
+    let riskData = [
+        ["type":"Cancer", "amount":"10", "label":"???"],
+        ["type":"Cancer", "amount":"5", "label":"???"],
+        ["type":"Cancer", "amount":"1", "label":"???"],
+        ["type":"Cancer", "amount":"10", "label":"???"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,13 +77,27 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if(indexPath.section == 0){
             let cell = tableView.dequeueReusableCell(withIdentifier: "cardCell", for: indexPath) as! DetailCardViewCell
                     
-            //        cell.riskType.text =
-            //        cell.riskAmount.text =
-            //        cell.riskLabel.text =
-                    cell.backgroundColor = UIColor(white: 1.0, alpha: 1)
-                    cell.insideCardView.layer.cornerRadius = 10
+            let riskAmount = riskData[indexPath.row]["amount"]
+            
+            cell.riskType.text = riskData[indexPath.row]["type"]
+            cell.riskAmount.text = riskAmount
+            cell.riskLabel.text = riskData[indexPath.row]["label"]
+            
+            switch riskAmount! {
+            case "1","2","3":
+                cell.outsideCardView.color = UIColor(named: "Safe")
+            case "4","5","6","7":
+                cell.outsideCardView.color = UIColor(named:"Middle")
+                print("Middle")
+            case "8","9","10":
+                cell.outsideCardView.color = UIColor(named:"Risk")
+                print("Risk")
+            default:
+                cell.outsideCardView.color = UIColor(named:"Safe")
+            }
+            cell.insideCardView.layer.cornerRadius = 10
                     
-                    return cell
+            return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionCell", for: indexPath) as! DetailTableViewCell
         

@@ -8,14 +8,16 @@
 
 import UIKit
 
-@IBDesignable class DetailCardView: UIView {
+ class DetailCardView: UIView {
 
-    @IBInspectable var conerRadius : CGFloat = 10
-    @IBInspectable var shadowColor = UIColor.black
-    @IBInspectable var shadowOffSetWidth: Int = 1
-    @IBInspectable var shadowOffSetHeight: Int = 1
+     var conerRadius : CGFloat = 10
+     var shadowColor = UIColor.black
+     var shadowOffSetWidth: Int = 1
+     var shadowOffSetHeight: Int = 1
 
-    @IBInspectable var shadowOpacity: Float = 0.2
+     var shadowOpacity: Float = 0.2
+    
+    var color: UIColor?
     
     override func layoutSubviews() {
         layer.cornerRadius = conerRadius
@@ -28,5 +30,7 @@ import UIKit
         layer.shadowPath = shadowPath.cgPath
         
         layer.shadowOpacity = shadowOpacity
+        
+        layer.backgroundColor = color?.cgColor
     }
 }
