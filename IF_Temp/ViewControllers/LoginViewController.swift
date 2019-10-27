@@ -29,10 +29,10 @@ class LoginViewController: UIViewController {
     @IBAction func onSubmit(_ sender: Any) {
         
         if let username = usernameTextField.text {
-            //UserPersonalProfile.setUserName(name: username)
+            UserPersonalProfile.setUserName(name: username)
             
             //go to main
-            let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainViewController") as! MainViewController
+            let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainViewController")
             
             self.present(mainVC, animated: false, completion: nil)
         }

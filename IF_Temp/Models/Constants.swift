@@ -9,3 +9,4 @@
 import Foundation
 
 let URL_POST_TEMP = ""
+let URL_POST_SEND_INPUT = ""

@@ -51,10 +51,9 @@ class ViewController: UIViewController {
         
         else{
             //go to main
-            let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainViewController") as! MainViewController
+            let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainViewController")
                
             self.present(mainVC, animated: false, completion: nil)
-            //self.navigationController?.pushViewController(mainVC, animated: true)
         }
     }
     
