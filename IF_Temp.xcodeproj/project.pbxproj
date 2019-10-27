@@ -21,7 +21,6 @@
 		223FF6572364F5F90073A926 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF6562364F5F90073A926 /* MainViewController.swift */; };
 		223FF65B2365031C0073A926 /* PostNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65A2365031C0073A926 /* PostNetwork.swift */; };
 		223FF65D2365038C0073A926 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65C2365038C0073A926 /* Constants.swift */; };
-		223FF66023650E910073A926 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65F23650E910073A926 /* ProfileViewController.swift */; };
 		223FF66A23654F4D0073A926 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF66923654F4D0073A926 /* DetailViewController.swift */; };
 		223FF66C236550B70073A926 /* DetailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF66B236550B70073A926 /* DetailCardView.swift */; };
 		223FF674236582670073A926 /* InputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF673236582670073A926 /* InputTableViewController.swift */; };
@@ -47,7 +46,6 @@
 		223FF6562364F5F90073A926 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		223FF65A2365031C0073A926 /* PostNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetwork.swift; sourceTree = "<group>"; };
 		223FF65C2365038C0073A926 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		223FF65F23650E910073A926 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		223FF66923654F4D0073A926 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		223FF66B236550B70073A926 /* DetailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCardView.swift; sourceTree = "<group>"; };
 		223FF673236582670073A926 /* InputTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 				223FF62F2364BE510073A926 /* ViewController.swift */,
 				223FF6542364F5EE0073A926 /* LoginViewController.swift */,
 				223FF6562364F5F90073A926 /* MainViewController.swift */,
-				223FF65F23650E910073A926 /* ProfileViewController.swift */,
 				223FF66923654F4D0073A926 /* DetailViewController.swift */,
 				223FF66B236550B70073A926 /* DetailCardView.swift */,
 				223FF673236582670073A926 /* InputTableViewController.swift */,
@@ -295,7 +292,6 @@
 				223FF65D2365038C0073A926 /* Constants.swift in Sources */,
 				223FF6302364BE510073A926 /* ViewController.swift in Sources */,
 				223FF6512364C7F10073A926 /* HealthKitSetupAssistant.swift in Sources */,
-				223FF66023650E910073A926 /* ProfileViewController.swift in Sources */,
 				223FF6552364F5EE0073A926 /* LoginViewController.swift in Sources */,
 				223E34CA2365AC83000B1845 /* HealthKitGetProfile.swift in Sources */,
 				223FF66C236550B70073A926 /* DetailCardView.swift in Sources */,
