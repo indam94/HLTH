@@ -219,10 +219,6 @@ class PostNetwork{
     //MARK: - Send Input
     class func PostNetWorkSendInput(){
         
-        print("First Network Point")
-        
-        //Do not connect server
-        
         let session = Foundation.URLSession.shared
         let url = URL(string: URL_POST_SEND_INPUT)
         var request = URLRequest(url: url!)
@@ -300,7 +296,4 @@ class PostNetwork{
     }
     
     //MARK: - Request RiskData
-    
 }
-
-

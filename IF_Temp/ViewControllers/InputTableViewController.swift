@@ -37,6 +37,9 @@ class InputTableViewController: UITableViewController, UITextFieldDelegate {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if(indexPath.section == 5){
+            
+            PostWeight.postWeight()
+            PostBMI.postBMI()
 
             if let weight = weightTextField.text, let height = heightTextField.text, let steps = stepsTextField.text, let address1 = address1TextField.text, let address2 = address2TextField.text{
                 
@@ -84,9 +87,11 @@ class InputTableViewController: UITableViewController, UITextFieldDelegate {
             return
           }
           
-          let weightInKilograms = sample.quantity.doubleValue(for: HKUnit.gramUnit(with: .kilo))
-            self.weightTextField.text = "\(weightInKilograms) kg"
+            let weightInKilograms = sample.quantity.doubleValue(for: HKUnit.pound())
+            self.weightTextField.text = "\(weightInKilograms) lb"
             self.inputDataSet["weight"] = "\(weightInKilograms)"
+            
+            UserPersonalProfile.setUserWeight(name: weightInKilograms)
         }
         
     }
@@ -113,6 +118,8 @@ class InputTableViewController: UITableViewController, UITextFieldDelegate {
             let heightInMeters = sample.quantity.doubleValue(for: HKUnit.meterUnit(with: .centi))
             self.heightTextField.text = "\(heightInMeters) cm"
             self.inputDataSet["height"] = "\(heightInMeters)"
+            
+            UserPersonalProfile.setUserHeight(name: heightInMeters/100.0)
         }
         
     }
