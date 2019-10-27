@@ -38,6 +38,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
        
+        PostLastOne.postLastOne()
+        
         //if not login
         if((UserPersonalProfile.getUserName()) == nil || UserPersonalProfile.getUserName() == ""){
             

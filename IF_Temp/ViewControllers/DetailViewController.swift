@@ -32,10 +32,10 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var detailTableView: UITableView!
     
     let riskData = [
-        ["type":"Cancer", "amount":"10", "label":"???"],
-        ["type":"Cancer", "amount":"5", "label":"???"],
-        ["type":"Cancer", "amount":"1", "label":"???"],
-        ["type":"Cancer", "amount":"10", "label":"???"]]
+        ["type":"Cancer", "amount":"10", "label":"Really Dangerous"],
+        ["type":"Diabetes", "amount":"5", "label":"Not Bad"],
+        ["type":"Heart Disease", "amount":"1", "label":"Excellent"],
+        ["type":"Cancer", "amount":"10", "label":"?Really Dangerous"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()

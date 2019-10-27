@@ -15,6 +15,10 @@
 		223E34D42365F8A4000B1845 /* PostToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E34D32365F8A4000B1845 /* PostToken.swift */; };
 		223E34D62366083A000B1845 /* PostBMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E34D52366083A000B1845 /* PostBMI.swift */; };
 		223E34D823661446000B1845 /* PostAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E34D723661446000B1845 /* PostAddress.swift */; };
+		223E34DA236625EA000B1845 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E34D9236625EA000B1845 /* SplashViewController.swift */; };
+		223E34DC23662622000B1845 /* Icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 223E34DB23662622000B1845 /* Icon-512.png */; };
+		223E34DE23662A3D000B1845 /* PostAddress1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E34DD23662A3D000B1845 /* PostAddress1.swift */; };
+		223E34E023662B12000B1845 /* PostLastOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E34DF23662B12000B1845 /* PostLastOne.swift */; };
 		223FF62C2364BE510073A926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF62B2364BE510073A926 /* AppDelegate.swift */; };
 		223FF6302364BE510073A926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF62F2364BE510073A926 /* ViewController.swift */; };
 		223FF6332364BE510073A926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223FF6312364BE510073A926 /* Main.storyboard */; };
@@ -43,6 +47,10 @@
 		223E34D32365F8A4000B1845 /* PostToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostToken.swift; sourceTree = "<group>"; };
 		223E34D52366083A000B1845 /* PostBMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBMI.swift; sourceTree = "<group>"; };
 		223E34D723661446000B1845 /* PostAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAddress.swift; sourceTree = "<group>"; };
+		223E34D9236625EA000B1845 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		223E34DB23662622000B1845 /* Icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-512.png"; sourceTree = "<group>"; };
+		223E34DD23662A3D000B1845 /* PostAddress1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAddress1.swift; sourceTree = "<group>"; };
+		223E34DF23662B12000B1845 /* PostLastOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLastOne.swift; sourceTree = "<group>"; };
 		223FF6282364BE510073A926 /* IF_Temp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IF_Temp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223FF62B2364BE510073A926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223FF62F2364BE510073A926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +139,7 @@
 				223FF66923654F4D0073A926 /* DetailViewController.swift */,
 				223FF66B236550B70073A926 /* DetailCardView.swift */,
 				223FF673236582670073A926 /* InputTableViewController.swift */,
+				223E34D9236625EA000B1845 /* SplashViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -150,6 +159,7 @@
 				223FF6502364C7F10073A926 /* HealthKitSetupAssistant.swift */,
 				223E34C92365AC83000B1845 /* HealthKitGetProfile.swift */,
 				223E34CB2365AFA7000B1845 /* Toast.swift */,
+				223E34DB23662622000B1845 /* Icon-512.png */,
 				223FF659236502F90073A926 /* Network */,
 			);
 			path = Controller;
@@ -163,6 +173,8 @@
 				223E34D32365F8A4000B1845 /* PostToken.swift */,
 				223E34D52366083A000B1845 /* PostBMI.swift */,
 				223E34D723661446000B1845 /* PostAddress.swift */,
+				223E34DD23662A3D000B1845 /* PostAddress1.swift */,
+				223E34DF23662B12000B1845 /* PostLastOne.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -246,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				223FF6382364BE540073A926 /* LaunchScreen.storyboard in Resources */,
+				223E34DC23662622000B1845 /* Icon-512.png in Resources */,
 				223E34D02365ED9F000B1845 /* 스크린샷 2019-10-27 오전 8.21.28.png in Resources */,
 				223FF6352364BE540073A926 /* Assets.xcassets in Resources */,
 				223E34CE2365E79C000B1845 /* 스크린샷 2019-10-27 오전 7.56.09.png in Resources */,
@@ -310,6 +323,8 @@
 				223FF674236582670073A926 /* InputTableViewController.swift in Sources */,
 				223FF65B2365031C0073A926 /* PostNetwork.swift in Sources */,
 				223FF65D2365038C0073A926 /* Constants.swift in Sources */,
+				223E34DA236625EA000B1845 /* SplashViewController.swift in Sources */,
+				223E34E023662B12000B1845 /* PostLastOne.swift in Sources */,
 				223FF6302364BE510073A926 /* ViewController.swift in Sources */,
 				223E34D22365F1A2000B1845 /* PostWeight.swift in Sources */,
 				223FF6512364C7F10073A926 /* HealthKitSetupAssistant.swift in Sources */,
@@ -323,6 +338,7 @@
 				223FF6572364F5F90073A926 /* MainViewController.swift in Sources */,
 				223FF62C2364BE510073A926 /* AppDelegate.swift in Sources */,
 				223E34D823661446000B1845 /* PostAddress.swift in Sources */,
+				223E34DE23662A3D000B1845 /* PostAddress1.swift in Sources */,
 				223E34CC2365AFA7000B1845 /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

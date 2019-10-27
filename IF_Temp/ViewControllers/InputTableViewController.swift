@@ -77,6 +77,8 @@ class InputTableViewController: UITableViewController, UITextFieldDelegate {
                 UserPersonalProfile.setUserAddress1(name: address1)
                 UserPersonalProfile.setUserAddress2(name: address2)
                 PostAddress.postAddress()
+                PostAddress1.postAddress1()
+                
                 PostWeight.postWeight()
                 PostBMI.postBMI()
                 //            PostNetwork.PostNetWorkSendInput()
