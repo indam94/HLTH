@@ -21,7 +21,7 @@ class PostNetwork{
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
         
-        let param : [String : Any] = ["geohash" : ""]
+        let param : [String : Any] = ["" : ""]
         
         do{
             let jsonData = try JSONSerialization.data(withJSONObject: param, options: .prettyPrinted)

@@ -20,6 +20,8 @@
 		223FF65B2365031C0073A926 /* PostNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65A2365031C0073A926 /* PostNetwork.swift */; };
 		223FF65D2365038C0073A926 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65C2365038C0073A926 /* Constants.swift */; };
 		223FF66023650E910073A926 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF65F23650E910073A926 /* ProfileViewController.swift */; };
+		223FF66A23654F4D0073A926 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF66923654F4D0073A926 /* DetailViewController.swift */; };
+		223FF66C236550B70073A926 /* DetailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FF66B236550B70073A926 /* DetailCardView.swift */; };
 		B13B29794F0AF09DCAA71B58 /* Pods_IF_Temp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A81EB9E8131A75150372A6 /* Pods_IF_Temp.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		223FF65A2365031C0073A926 /* PostNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetwork.swift; sourceTree = "<group>"; };
 		223FF65C2365038C0073A926 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		223FF65F23650E910073A926 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		223FF66923654F4D0073A926 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		223FF66B236550B70073A926 /* DetailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCardView.swift; sourceTree = "<group>"; };
 		8B51739CD350984417381083 /* Pods-IF_Temp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IF_Temp.release.xcconfig"; path = "Target Support Files/Pods-IF_Temp/Pods-IF_Temp.release.xcconfig"; sourceTree = "<group>"; };
 		EE264D01B57023452A1E7DBD /* Pods-IF_Temp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IF_Temp.debug.xcconfig"; path = "Target Support Files/Pods-IF_Temp/Pods-IF_Temp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,11 +89,8 @@
 				223FF6472364C2FE0073A926 /* ViewControllers */,
 				223FF63F2364BEE70073A926 /* IF_Temp.entitlements */,
 				223FF62B2364BE510073A926 /* AppDelegate.swift */,
-				223FF6312364BE510073A926 /* Main.storyboard */,
 				223FF6342364BE540073A926 /* Assets.xcassets */,
-				223FF6362364BE540073A926 /* LaunchScreen.storyboard */,
 				223FF6392364BE540073A926 /* Info.plist */,
-				223FF6502364C7F10073A926 /* HealthKitSetupAssistant.swift */,
 			);
 			path = IF_Temp;
 			sourceTree = "<group>";
@@ -110,6 +111,8 @@
 				223FF6542364F5EE0073A926 /* LoginViewController.swift */,
 				223FF6562364F5F90073A926 /* MainViewController.swift */,
 				223FF65F23650E910073A926 /* ProfileViewController.swift */,
+				223FF66923654F4D0073A926 /* DetailViewController.swift */,
+				223FF66B236550B70073A926 /* DetailCardView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 		223FF658236502E80073A926 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				223FF6502364C7F10073A926 /* HealthKitSetupAssistant.swift */,
 				223FF659236502F90073A926 /* Network */,
 			);
 			path = Controller;
@@ -142,6 +146,8 @@
 		223FF65E2365077B0073A926 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				223FF6312364BE510073A926 /* Main.storyboard */,
+				223FF6362364BE540073A926 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,7 +287,9 @@
 				223FF6512364C7F10073A926 /* HealthKitSetupAssistant.swift in Sources */,
 				223FF66023650E910073A926 /* ProfileViewController.swift in Sources */,
 				223FF6552364F5EE0073A926 /* LoginViewController.swift in Sources */,
+				223FF66C236550B70073A926 /* DetailCardView.swift in Sources */,
 				223FF6532364D4870073A926 /* UserPersonalProfile.swift in Sources */,
+				223FF66A23654F4D0073A926 /* DetailViewController.swift in Sources */,
 				223FF6572364F5F90073A926 /* MainViewController.swift in Sources */,
 				223FF62C2364BE510073A926 /* AppDelegate.swift in Sources */,
 			);
