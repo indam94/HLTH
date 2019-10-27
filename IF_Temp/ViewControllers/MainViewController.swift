@@ -155,12 +155,13 @@ class MainViewController: UIViewController {
         view7.backgroundColor = .white
         view7.layer.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
          
-         self.view.addSubview(view7)
+        self.view.addSubview(view7)
         view7.translatesAutoresizingMaskIntoConstraints = false
         view7.widthAnchor.constraint(equalToConstant: 337).isActive = true
         view7.heightAnchor.constraint(equalToConstant: 104).isActive = true
         view7.leadingAnchor.constraint(equalTo:  self.view.leadingAnchor, constant: 18).isActive = true
         view7.topAnchor.constraint(equalTo:  self.view.topAnchor, constant: 562).isActive = true
+        
         // Group
         let view8 = UILabel()
         view8.frame = CGRect(x: 0, y: 0, width: 375, height: 120)
