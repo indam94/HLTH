@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var helloUser: UILabel!
     
+    @IBOutlet weak var profileImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +22,8 @@ class MainViewController: UIViewController {
             helloUser.text = "Hello!\n\(userName)"
             
         }
+        
+        profileImg.layer.cornerRadius = 50
     }
 
 }
