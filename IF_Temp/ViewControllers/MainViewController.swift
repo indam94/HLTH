@@ -21,6 +21,8 @@ extension Date {
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var travelView: UIView!
+    
     @IBOutlet weak var helloUser: UILabel!
     
     @IBOutlet weak var profileImg: UIImageView!
@@ -33,8 +35,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var bmiStatusLabel: UILabel!
     
-    @IBOutlet weak var profileImg2: UIImageView!
-    
+    @IBOutlet weak var travelLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,15 +48,49 @@ class MainViewController: UIViewController {
 
         profileImg.layer.cornerRadius = profileImg.frame.size.width/2
         profileImg.clipsToBounds = true
-        profileImg2.layer.cornerRadius = profileImg2.frame.size.width/2
-        profileImg2.clipsToBounds = true
+        
         
         profileImg.layer.borderColor = UIColor.gray.cgColor
         profileImg.layer.borderWidth = 1.0
-        profileImg2.layer.borderColor = UIColor.gray.cgColor
-        profileImg2.layer.borderWidth = 1.0
         
         userStatusView.layer.cornerRadius = 10
+        
+        
+        bloodPressureView.layer.cornerRadius = 10
+        
+        bloodPressureView.layer.shadowColor = UIColor.black.cgColor
+        
+        bloodPressureView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        
+        let shadowPath = UIBezierPath(roundedRect: bloodPressureView.bounds, cornerRadius: 10)
+        
+        bloodPressureView.layer.shadowPath = shadowPath.cgPath
+        
+        bloodPressureView.layer.shadowOpacity = 0.2
+        
+        userSyncView.layer.cornerRadius = 10
+        
+        userSyncView.layer.shadowColor = UIColor.black.cgColor
+        
+        userSyncView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        
+        let shadowPath2 = UIBezierPath(roundedRect: userSyncView.bounds, cornerRadius: 10)
+        
+        userSyncView.layer.shadowPath = shadowPath2.cgPath
+        
+        userSyncView.layer.shadowOpacity = 0.2
+        
+        travelView.layer.cornerRadius = 10
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        
+        //print(Int(UserPersonalProfile.getUserSyncTimeToken()!)!)
+        print(Date().millisecondsSince1970)
+        //PostToken.postToken()
+        if(UserPersonalProfile.getUserSyncTimeToken() == nil || UserPersonalProfile.getUserSyncTimeToken() == "" || Int(UserPersonalProfile.getUserSyncTimeToken()!)! < Date().millisecondsSince1970/1000){
+            
+            PostToken.postToken()
+        }
         
         if(UserPersonalProfile.getUserBMI() != nil && UserPersonalProfile.getUserBMI() != 0){
             let bmi = UserPersonalProfile.getUserBMI()!
@@ -75,28 +110,23 @@ class MainViewController: UIViewController {
             userStatusView.layer.backgroundColor = UIColor(named: "Safe")?.cgColor
         }
         
-        bloodPressureView.layer.cornerRadius = 10
-        
-        bloodPressureView.layer.shadowColor = UIColor.black.cgColor
-        
-        bloodPressureView.layer.shadowOffset = CGSize(width: 1, height: 1)
-        
-        let shadowPath = UIBezierPath(roundedRect: bloodPressureView.bounds, cornerRadius: 10)
-        
-        bloodPressureView.layer.shadowPath = shadowPath.cgPath
-        
-        bloodPressureView.layer.shadowOpacity = 0.2
-        
-        userSyncView.layer.cornerRadius = 10
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        
-        print(Int(UserPersonalProfile.getUserSyncTimeToken()!)!)
-        print(Date().millisecondsSince1970)
-        //PostToken.postToken()
-        if(UserPersonalProfile.getUserSyncTimeToken() == nil || UserPersonalProfile.getUserSyncTimeToken() == "" || Int(UserPersonalProfile.getUserSyncTimeToken()!)! < Date().millisecondsSince1970/1000){
-            
-            PostToken.postToken()
+        if(UserPersonalProfile.getUserTravelTime() != nil && UserPersonalProfile.getUserTravelTime() != 0){
+            let bmi = UserPersonalProfile.getUserTravelTime()!
+            if(bmi < 30){
+                travelView.layer.backgroundColor = UIColor(named: "Safe")?.cgColor
+                travelLabel.text = "Good"
+            }
+            else if(bmi < 60 && bmi > 30){
+                travelView.layer.backgroundColor = UIColor(named: "Middle")?.cgColor
+                travelLabel.text = "Not Good"
+            }
+            else{
+                travelView.layer.backgroundColor = UIColor(named: "Risk")?.cgColor
+                travelLabel.text = "Bad"
+            }
+        }else{
+            travelView.layer.backgroundColor = UIColor(named: "Safe")?.cgColor
         }
+        
     }
 }

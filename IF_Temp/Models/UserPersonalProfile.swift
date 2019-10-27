@@ -26,6 +26,9 @@ let USER_PERSONAL_PROFILE_DATA_SYNC_TIME_TOKEN = "user_personal_profile_data_syn
 
 let USER_PERSONAL_PROFILE_DATA_TOKEN = "user_personal_profile_data_token"
 
+let USER_PERSONAL_PROFILE_DATA_DISTANCE = "user_personal_profile_data_distance"
+
+let USER_PERSONAL_PROFILE_DATA_TRAVEL = "user_personal_profile_data_travel"
 
 class UserPersonalProfile{
     
@@ -149,5 +152,23 @@ class UserPersonalProfile{
     
     class func setUserBMI(name: Double){
         UserDefaults.standard.set(name, forKey: USER_PERSONAL_PROFILE_DATA_BMI)
+    }
+    
+    //MARK: - Distance
+    class func getUserDistance() -> Double? {
+        return UserDefaults.standard.double(forKey: USER_PERSONAL_PROFILE_DATA_DISTANCE)
+    }
+    
+    class func setUserDistance(name: Double){
+        UserDefaults.standard.set(name, forKey: USER_PERSONAL_PROFILE_DATA_DISTANCE)
+    }
+    
+    //MARK: - Travel Time
+    class func getUserTravelTime() -> Double? {
+        return UserDefaults.standard.double(forKey: USER_PERSONAL_PROFILE_DATA_TRAVEL)
+    }
+    
+    class func setUserTravelTime(name: Double){
+        UserDefaults.standard.set(name, forKey: USER_PERSONAL_PROFILE_DATA_TRAVEL)
     }
 }

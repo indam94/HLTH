@@ -32,34 +32,31 @@ class InputTableViewController: UITableViewController, UITextFieldDelegate {
         self.tableView.backgroundColor = UIColor(white: 0.95, alpha: 1)
         
         self.tableView.keyboardDismissMode = .onDrag
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.displaySuccessAlert), name: NOTIFICATION_SET_USER_INFO, object: nil)
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if(indexPath.section == 5){
             
-            PostWeight.postWeight()
-            PostBMI.postBMI()
-
-            if let weight = weightTextField.text, let height = heightTextField.text, let steps = stepsTextField.text, let address1 = address1TextField.text, let address2 = address2TextField.text{
-                
-                if(weight != "" && height != "" && steps != "" && address1 != "" && address2 != ""){
-                    
-                    
-                    
-                    //            PostNetwork.PostNetWorkSendInput()
-                    
-                    print("You Save : \(weight)")
-                }else{
-                     print("You Can not Save")
-                    self.showToast(message: "Item not entered exists", font: .boldSystemFont(ofSize: 15))
-                }
-                
-                
-                
-            }else{
-                self.showToast(message: "Item not entered exists", font: .boldSystemFont(ofSize: 15))
+            let alert = UIAlertController(title: "Inform",
+                                          message: "By using this app, you consent to our use and disclosure of your protected healthcare information. You have the right to revoke this consent in writing, signed by you. However, such a revocation will not be retroactive.",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK",
+                                          style: .default,
+                                          handler:
+                {
+                    action in
+                    self.pushInfo()
             }
+            ))
+            alert.addAction(UIAlertAction(title: "Cancel",
+            style: .cancel,
+            handler: nil))
+            present(alert, animated: true, completion: nil)
+
+            
             
         }
         
@@ -70,6 +67,31 @@ class InputTableViewController: UITableViewController, UITextFieldDelegate {
             loadAndDisplayTodaySteps()
         }
         
+    }
+    
+    private func pushInfo(){
+        if let weight = weightTextField.text, let height = heightTextField.text, let steps = stepsTextField.text, let address1 = address1TextField.text, let address2 = address2TextField.text{
+            
+            if(weight != "" && height != "" && steps != "" && address1 != "" && address2 != ""){
+                
+                UserPersonalProfile.setUserAddress1(name: address1)
+                UserPersonalProfile.setUserAddress2(name: address2)
+                PostAddress.postAddress()
+                PostWeight.postWeight()
+                PostBMI.postBMI()
+                //            PostNetwork.PostNetWorkSendInput()
+                
+                print("You Save : \(weight)")
+            }else{
+                 print("You Can not Save")
+                self.showToast(message: "Item not entered exists", font: .boldSystemFont(ofSize: 15))
+            }
+            
+            
+            
+        }else{
+            self.showToast(message: "Item not entered exists", font: .boldSystemFont(ofSize: 15))
+        }
     }
     
     private func loadAndDisplayMostRecentWeight(){
@@ -161,6 +183,16 @@ class InputTableViewController: UITableViewController, UITextFieldDelegate {
                                     style: .default,
                                     handler: nil))
       present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func displaySuccessAlert(){
+        let alert = UIAlertController(title: "Connect",
+                                      message: "Success!",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "O.K.",
+                                      style: .default,
+                                      handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
 }
