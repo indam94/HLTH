@@ -39,6 +39,15 @@ class PostLastOne{
                     
                     print(jsonResult)
                     
+                    let cancer = jsonResult["cancer"] as! Int
+                    let diabetes = jsonResult["diabetes"] as! Int
+                    let heart = jsonResult["heart"] as! Int
+                    let stress = jsonResult["stress"] as! Int
+                    
+                    let dic = ["cancer":cancer, "diabetes": diabetes, "heart":heart, "stress":stress]
+                    
+                    UserPersonalProfile.setUserLast(name: dic)
+                    
                 }//End - do
                 catch let error as NSError{
                     print(error.localizedDescription)

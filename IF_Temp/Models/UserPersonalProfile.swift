@@ -30,6 +30,8 @@ let USER_PERSONAL_PROFILE_DATA_DISTANCE = "user_personal_profile_data_distance"
 
 let USER_PERSONAL_PROFILE_DATA_TRAVEL = "user_personal_profile_data_travel"
 
+let USER_PERSONAL_PROFILE_DATA_LAST = "user_personal_profile_data_last"
+
 class UserPersonalProfile{
     
     //MARK: - Name
@@ -170,5 +172,14 @@ class UserPersonalProfile{
     
     class func setUserTravelTime(name: Double){
         UserDefaults.standard.set(name, forKey: USER_PERSONAL_PROFILE_DATA_TRAVEL)
+    }
+    
+    //MARK: - Last
+    class func getUserLast() -> [String:Any]? {
+        return UserDefaults.standard.dictionary(forKey: USER_PERSONAL_PROFILE_DATA_LAST)
+    }
+    
+    class func setUserLast(name: [String:Any]){
+        UserDefaults.standard.set(name, forKey: USER_PERSONAL_PROFILE_DATA_LAST)
     }
 }
